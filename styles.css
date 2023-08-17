@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+/* Container styles */
+#container {
+  margin: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Inserted content before main content */
+#container::before {
+  content: "Before Element";
+  color: #f00;
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+/* Inserted content after main content */
+#container::after {
+  content: "After Element";
+  color: #f00;
+  font-size: 20px;
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+}
+
